@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vending.css">
+</head>
+<body>
+    <h1 align="center" style="padding-top: 20px;">vending machine</h1>
+    <div class="square" ><br>
+        <button onclick="madplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+        <label id="madStock">&nbsp;A1:MADANGLES &nbsp;&nbsp; STOCK    :10&nbsp; &nbsp;PRICE:$20</label>
+        <button onclick="madminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+        <img src="New folder\mad\46ead1530433eba0b2f72cc41a8a28ac.jpg" style="width: 100px; height: 100px;"><br><br>
+
+        <button onclick="cakeplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+        <label id="cakeStock">&nbsp;A2:SLICECAKE &nbsp;&nbsp;STOCK:10 &nbsp; &nbsp;PRICE:$10</label>
+        <button onclick="cakeminus()" style="font-size: 20px; margin-right: 20px; ">-</button>
+        <img src="New folder\cake\images.jpeg" style="width: 100px; height: 100px; "><br><br>
+
+        <button onclick="chocoplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+        <label id="chocoStock">&nbsp;A3:CHOCOLATES &nbsp;&nbsp;STOCK:10 &nbsp; &nbsp;PRICE:$30</label>
+        <button onclick="chocominus()" style="font-size: 20px; margin-right: 20px;">-</button>
+        <img src="New folder\choco\download.jpeg" style="width: 100px; height: 100px;"><br><br>
+        </div>
+        
+        <div class="square"><br>
+            <button onclick="bigplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="bigStock">&nbsp;B1:BINGO &nbsp;&nbsp; STOCK:10&nbsp; &nbsp;PRICE:$20</label>
+            <button onclick="bingminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+            <img src="New folder\download (2).jpeg" style="width: 100px; height: 100px;"><br><br>
+
+            <button onclick="goplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="goStock">&nbsp;B2:BINGO &nbsp;&nbsp;STOCK:10&nbsp; &nbsp;PRICE:$10</label>
+            <button onclick="gominus()" style="font-size: 20px; margin-right: 20px; ">-</button>
+            <img src="New folder\40012930_13-bingo-potato-chips-original-style-salt-sprinkled.webp" style="width: 100px; height: 100px; "><br><br>
+
+            <button onclick="kurplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="kurStock">&nbsp;B3:KURKURE &nbsp;&nbsp;STOCK:10 &nbsp; &nbsp;PRICE:$40</label>
+            <button onclick="kurminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+            <img src="New folder\kur\download (1).jpeg" style="width: 100px; height: 100px;"><br><br>
+        </div>
+        
+        <div class="square" ><br>
+            <button onclick="fanplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="fanStock">&nbsp;C1:FANTA &nbsp;&nbsp; STOCK:10&nbsp; &nbsp;PRICE:$30</label>
+            <button onclick="fanminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+            <img src="New folder\download (1).jpeg" style="width: 100px; height: 100px;"><br><br>
+
+            <button onclick="bingoplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="bingoStock">&nbsp;C2:BINGO &nbsp;&nbsp;STOCK:10&nbsp; &nbsp;PRICE:$10</label>
+            <button onclick="bingominus()" style="font-size: 20px; margin-right: 20px; ">-</button>
+            <img src="New folder\download.jpeg" style="width: 100px; height: 100px; "><br><br>
+
+            <button onclick="browplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="browStock">&nbsp;C3:BROWNIE &nbsp;&nbsp;STOCK:10 &nbsp; &nbsp;PRICE:$30</label>
+            <button onclick="browminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+            <img src="New folder\istockphoto-168731372-612x612.jpg" style="width: 100px; height: 100px;"><br><br>
+        </div>
+        
+        <div class="square" ><br>
+            <button onclick="waferplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="waferStock">&nbsp;D1:WAFER &nbsp;&nbsp; STOCK:10&nbsp; &nbsp;PRICE:$20</label>
+            <button onclick="waferminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+            <img src="New folder\0012514_unibic-wafers-yummy-strawberry-75gm_510.jpeg" style="width: 100px; height: 100px;"><br><br>
+
+            <button onclick="munchplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="munchStock">&nbsp;D2:MUNCH &nbsp;&nbsp;STOCK:10 &nbsp; &nbsp;PRICE:$10</label>
+            <button onclick="munchminus()" style="font-size: 20px; margin-right: 20px; ">-</button>
+            <img src="New folder\17989723-1720765068318.webp" style="width: 100px; height: 100px; "><br><br>
+
+            <button onclick="cowaferplus()" style="font-size: 20px; margin-left: 20px;">+</button>
+            <label id="cowaferStock">&nbsp;D3:CHOCOWAFER &nbsp;&nbsp;STOCK:10 &nbsp; &nbsp;PRICE:$30</label>
+            <button onclick="cowaferminus()" style="font-size: 20px; margin-right: 20px;">-</button>
+            <img src="New folder\UNIBIC_QUBAZ_WAFER_CUBES_CHOCOLATE_24X150G-removebg-preview.webp" style="width: 100px; height: 100px;"><br><br>
+        </div>
+        <br>
+        <a href="cart.html"><button onclick="cart()" style="margin-left: 550px; border-radius: 20px;"> <img src="New folder\cart\download.jpeg" style="width: 100px; height: 100px; border-radius: 20px;"></button></a>     
+        
+        <script src="script.js"></script>    
+</body>
+</html>
