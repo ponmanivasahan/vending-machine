@@ -15,7 +15,7 @@ button { padding:5px 10px; margin:2px;}
   border-width: 3px;
   border-style: solid;
   border-radius: 20px;
-  margin-top: 75px;
+  margin-top: 75px;   
   margin-left: 500px;
   text-align: center;
 }
@@ -88,13 +88,6 @@ function renderCart() {
       } else {
         cart.splice(index, 1); 
       }
-      saveCart();
-      renderCart();
-    };
-    const plusBtn = document.createElement("button");
-    plusBtn.textContent = "+";
-    plusBtn.onclick = () => {
-      item.qty++;
       saveCart();
       renderCart();
     };

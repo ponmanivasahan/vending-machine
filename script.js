@@ -229,15 +229,16 @@ function munchplus() {
  
 
 
-let cart = JSON.parse(localStorage.getItem("cart")) ;
-
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+// || operator 
 function addToCart(name, price) {
   let item = cart.find(i => i.name === name);
   if (item) {
     item.qty++;
   } else {
-    cart.push({ name, price, qty: 1 });
+    cart.push({ name, price, qty: 1 }); /// [{name: "Kurkure", price: "$20", qty: 2},{name: "milkyway",}]
   }
+  console.log(cart) // 
   localStorage.setItem("cart", JSON.stringify(cart));
   alert(`${name} added to cart!`);
 }
